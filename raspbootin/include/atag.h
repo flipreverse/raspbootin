@@ -36,7 +36,7 @@ public:
         return ptr;
     }
 private:
-    void* operator new (std::size_t size) throw (std::bad_alloc) = delete;
+    void* operator new (std::size_t size) throw () = delete;
     void* operator new (std::size_t size, const std::nothrow_t& nothrow_value) throw() = delete;
 };
 
